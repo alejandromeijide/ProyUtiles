@@ -17,3 +17,59 @@ tr:nth-child(even) {
 }
 #tablaClientes{margin:30px}
 
+.feo {
+	background-color:#81d8d0;
+
+}
+
+
+h1 {
+	background-color:#fc3264;
+	text-align: left;
+	font-family:'Arial';
+
+}
+
+#titulo{
+	background-color:#51d1f6;
+	
+}
+.caja { 
+font-family: sans-serif; 
+font-size: 18px; 
+font-weight: 400; 
+color: #ffffff; 
+background:#ee0467 ;
+}
+
+.guapo{
+	background-color:#ff8080 ;
+
+}
+#titulo1{
+	background-color:#fceeba ;
+	
+}
+
+.formu span{
+	background-color:#ff8081 ;
+	
+	
+}
+
+#fondo{
+	background-color:#61CACF ;
+	
+}
+
+#div1{
+	background-color:#ee0467;
+	
+}
+
+#div2{
+	background-color:#ff8080 ;
+	
+}
+
+

@@ -4,65 +4,97 @@
 <meta charset="UTF-8">
 <title> Listado de clientes</title>
 <link rel="stylesheet" href="css/estilos.css"/> 
+<script type="text/javascript" src="js/proyectobasic.js"></script>
+
 
 </head>
-<body>
+<body onload="init()">
 
-<h1>Listado Clientes</h1>
+<h1 class="feo" id="titulo">Listado Clientes</h1>
 
 <table id="tablaClientes">
-  <tr>
-    <th>Código</th>
-    <th>Nombre</th>
-    <th>Delegación</th>
-    <th>Provincia</th>
-    <th>Localidad</th>
-    <th>Acciones</th>
+  <tr id="Cabecera">
+    <th  class="feo">Código</th>
+    <th  class="feo">Nombre</th>
+    <th  class="feo">Delegación</th>
+    <th  class="feo">Provincia</th>
+    <th  class="feo">Localidad</th>
+    <th  class="feo">Acciones</th>
     
   </tr>
-  <tr>
+  <tr id="fila1">
    	<td>001</td>
     <td>Alfredo de Lucas</td>
     <td>ASDFG</td>
     <td>Madrid</td>
     <td>ADH</td>
+    <td>
+    
+  
+    <button onclick="anadeRegistro()">Añadir Registro</button>
+    
+    <button onclick="eliminaRegistro('fila1')">Eliminar
+    </button>
+    
+    
+    </td>
     
   </tr>
-  <tr>
-    <td>001</td>
+  <tr id="fila2">
+    <td>002</td>
     <td>Alfredo de Lucas</td>
     <td>ASDFG</td>
     <td>Madrid</td>
     <td>ADH</td>
+    <td>
+    <button onclick="anadeRegistro()">Añadir Registro</button>
+    <button onclick="eliminaRegistro('fila2')">Eliminar</button>
+    <button onclick="actualizaRegistro()">Actualizar</button>
+     
+     </td>
   </tr>
-  <tr>
-    <td>001</td>
+  <tr id="fila3">
+    <td>003</td>
     <td>Alfredo de Lucas</td>
     <td>ASDFG</td>
     <td>Madrid</td>
     <td>ADH</td>
+    <td>
+    <button onclick="anadeRegistro()">Añadir Registro</button>
+    <button onclick="eliminaRegistro('fila3')">Eliminar</button>
+    <button onclick="actualizaRegistro()">Actualizar</button>
+     
+     </td>
+    
   </tr>
-  <tr>
-    <td>001</td>
+  <tr id="fila4">
+    <td>004</td>
     <td>Alfredo de Lucas</td>
     <td>ASDFG</td>
     <td>Madrid</td>
     <td>ADH</td>
+     <td>
+    <button onclick="anadeRegistro()">Añadir Registro</button>
+    <button onclick="anadeRegistro('fila4')">Eliminar</button>
+    <button onclick="anadeRegistro()">Actualizar</button>
+     
+     </td>
+    
   </tr>
-  <tr>
-    <td>001</td>
+  <tr id="fila5">
+    <td>005</td>
     <td>Alfredo de Lucas</td>
     <td>ASDFG</td>
     <td>Madrid</td>
     <td>ADH</td>
+     <td>
+    <button onclick="anadeRegistro()">Añadir Registro</button>
+    <button onclick="eliminaRegistro('fila5')">Eliminar</button>
+    <button onclick="actualizaRegistro()">Actualizar</button>
+     
+     </td>
   </tr>
-  <tr>
-    <td>001</td>
-    <td>Alfredo de Lucas</td>
-    <td>ASDFG</td>
-    <td>Madrid</td>
-    <td>ADH</td>
-  </tr>
+  
 </table>
 
 </body>

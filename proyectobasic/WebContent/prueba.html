@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/lib/jquery.min.js"></script>
+ <script type="text/javascript">
+$(document).ready(function(){ 
+	$("#boton01").click(function () {
+		//saco el valor accediendo a un input de tipo text y name = nombre
+		var valorname=$('input:text[name=nombre3]').prop("name");
+		console.log(valorname);
+		$('input:text[name=nombre3]').val(valorname);
+		
+	
+
+	});
+});
+</script>
+
+
+
+<input type="text" name="nombre3" id="nombre3" class="nombre3" value="">
+
+<input type="button" name="boton01" id="boton01" value="valor">
+
+
+<!-- Probar con jquery  funciones de mostrar, esconder y tal de formulariocliente -->
+
+<!--  alert($("#nombre").val()); -->
+
+<!-- <!--  alert($("#nombre").val()); --> 
