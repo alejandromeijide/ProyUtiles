@@ -9,38 +9,48 @@
 </head>
 <body>
 
-<p> 
 
-
-<h1 class="guapo" id="titulo1">Añadir registro</h1>
-
-<table id="tablaClientes">
-  <tr id="Cabecera">
-    <th  class="guapo">Código</th>
-    <th  class="guapo">Nombre</th>
-    <th  class="guapo">Delegación</th>
-    <th  class="guapo">Provincia</th>
-    <th  class="guapo">Localidad</th>
-    <th  class="guapo"> </th>
-    
-    
-    
-  </tr>
-  <tr id="fila1">
-   	<td><input type="text" name="nombredelacaja" placeholder="Inserte un dato de tipo int"></td>
-  	<td><input type="text" name="nombredelacaja"placeholder="Inserte un dato de tipo String"></td>
-     <td><input type="text" name="nombredelacaja"placeholder="Inserte un dato de tipo String"></td>
-     <td><input type="text" name="nombredelacaja"placeholder="Inserte un dato de tipo String"></td>
-     <td><input type="text" name="nombredelacaja"placeholder="Inserte un dato de tipo String"></td>
-     <td><button type="submit">Enviar</button> </td>
-    <td>
-    
-  
-    </td>
-    
-  
-    
-</table>
-
-</body>
+     <form:form method="POST" 
+          action="/crear-cliente" modelAttribute="cliente">
+             <table>
+                <tr>
+                    <td><input type="text"  form:label path="codigo" >Código </form:label> </td>
+                    <td><form:input path="codigo"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text" form:label path="Nombre">Nombre</form:label></td>
+                    <td><form:input path="Nombre"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text" form:label path="delegacion">
+                      Delegación</form:label></td>
+                    <td><form:input path="delegacion"/></td>
+                </tr>
+                 <tr>
+                    <td><input type="text" form:label path="provincia">
+                      Provincia</form:label></td>
+                    <td><form:input path="provincia"/></td>
+                </tr>
+                
+                 <tr>
+                    <td><input type="text" form:label path="localidad">
+                      Localidad</form:label></td>
+                    <td><form:input path="localidad"/></td>
+                </tr>
+                
+               
+                
+                <tr>
+                    <td><input type="submit" value="Submit"/></td>
+                </tr>
+            </table>
+        </form:form>
+    </body>
 </html>
+    
+    
+    
+    
+   
+    
+  

@@ -1,3 +1,5 @@
+
+
 function anadeRegistro(){
 	
 	
@@ -19,22 +21,46 @@ function actualizaRegistro(){
 	alert('Registro actualizado');
 }
 function eliminaRegistro(idFila){
-	
+console.log("pruebapost");
 	if (!confirm("Seguro que quieres eliminar?")){
 		return;
 	}
 	
- 	var fila =document.getElementById(idFila);
-	fila.parentNode.removeChild(fila);
+	  $.ajax({
+            type: "POST",
+            url: "/eliminar-cliente/{codigo}",
+          //  data: dataString,
+            success: function(response) {			
+               // $('.alert-success').empty();
+                //$('.alert-success').append(response).fadeIn("slow");
+                $('#'+parent).fadeOut("slow");
+            }
+        });
+	
+	
+	
+// 	var fila =document.getElementById(idFila);
+//	fila.parentNode.removeChild(fila);
 
 	console.log("Fila eliminada")
 	
 	
-	
-	
-	
-	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function init(){
 	console.log("init")
 }
