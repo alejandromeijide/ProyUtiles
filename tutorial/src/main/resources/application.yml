@@ -1,0 +1,24 @@
+aplicacion:
+  nombre: Tutorial Spring Boot
+   
+server:
+  port: 8081
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5434/springapp
+    username: postgres
+    password: holaalejandro
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+  main:
+      web-application-type: none
+      
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
